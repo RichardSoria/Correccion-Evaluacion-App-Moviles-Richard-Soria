@@ -8,7 +8,7 @@ import { NgFor, CommonModule } from '@angular/common';
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
-  imports: [CommonModule, FormsModule, NgFor, IonHeader, IonToolbar, IonTitle, IonContent, IonInput, IonItem, IonList, IonLabel, IonDatetime, IonSelect, IonSelectOption, IonButton ],
+  imports: [CommonModule, FormsModule, IonHeader, IonToolbar, IonTitle, IonContent, IonInput, IonItem, IonLabel, IonDatetime, IonSelect, IonSelectOption, IonButton ],
 })
 export class HomePage {
   newName: string = '';
