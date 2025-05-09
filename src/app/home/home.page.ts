@@ -25,6 +25,10 @@ export class HomePage {
   constructor(private formsService: FormsService) {}
 
   createForm() {
+    if (!this.newName || !this.newLastName || !this.newCedula || !this.newBirthDate || !this.newAge || !this.newGender || !this.newEmail || !this.newPhone || !this.newAddress || !this.newCareer) {
+      alert('Por favor, complete todos los campos');
+      return;
+    }
     this.formsService.createForm(this.newName, this.newLastName, this.newCedula, this.newBirthDate, this.newAge, this.newGender, this.newEmail, this.newPhone, this.newAddress, this.newCareer)
       .then(() => {
         alert('Formulario creado con éxito');
